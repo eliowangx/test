@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>91MXD_地址发布页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #11998e;
+        }
+        
+        .subtitle {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: rgba(0, 0, 0, 0.8);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            border-radius: 1px;
+        }
+        
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .link-item {
+            background: rgba(17, 153, 142, 0.08);
+            border-radius: 12px;
+            padding: 18px 25px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(17, 153, 142, 0.15);
+        }
+        
+        .link-item:hover {
+            background: rgba(17, 153, 142, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(17, 153, 142, 0.15);
+        }
+        
+        .link-label {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 8px;
+        }
+        
+        .link-url {
+            font-size: 16px;
+            color: #11998e;
+            text-decoration: none;
+            word-break: break-all;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        
+        .link-url:hover {
+            color: #0d7a6e;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 13px;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>找到回家的路</h1>
+        <p class="subtitle">请 Ctrl+D 收藏本页到浏览器收藏夹</p>
+        
+        <div class="section">
+            <h2 class="section-title">备用域名</h2>
+            <div class="link-list">
+                <div class="link-item">
+                    <div class="link-label">主域被污染，请使用备用域名</div>
+                    <a href="https://www.baidu.com/" class="link-url">https://www.baidu.com/</a>
+                </div>
+                <div class="link-item">
+                    <div class="link-label">备用1</div>
+                    <a href="https://www.baidu.com/" class="link-url">https://www.baidu.com/</a>
+                </div>
+                <div class="link-item">
+                    <div class="link-label">备用2</div>
+                    <a href="https://www.baidu.com/" class="link-url">https://www.baidu.com/</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            All Rights Reserved
+        </div>
+    </div>
+</body>
+</html>
